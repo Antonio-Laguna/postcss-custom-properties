@@ -20,7 +20,8 @@
   ],
   "scripts": {
     "prepublishOnly": "npm test",
-    "pretest": "rollup -c .rollup.js --silent",
+    "prepare": "rollup -c .rollup.js --silent",
+    "pretest": "npm run prepare",
     "test": "npm run test:js && npm run test:tape",
     "test:js": "eslint *.js lib/*.js --cache --ignore-path .gitignore --quiet",
     "test:tape": "postcss-tape"
