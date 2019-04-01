@@ -12,12 +12,6 @@
   "bugs": "https://github.com/postcss/postcss-custom-properties/issues",
   "main": "index.cjs.js",
   "module": "index.esm.mjs",
-  "files": [
-    "index.cjs.js",
-    "index.cjs.js.map",
-    "index.esm.mjs",
-    "index.esm.mjs.map"
-  ],
   "scripts": {
     "prepublishOnly": "npm test",
     "prepare": "rollup -c .rollup.js --silent",
